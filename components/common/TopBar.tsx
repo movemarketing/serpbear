@@ -35,7 +35,7 @@ const TopBar = ({ showSettings, showAddModal }:TopbarProps) => {
 
         <h3 className={`p-4 text-base font-bold text-blue-700 ${isDomainsPage ? 'lg:pl-0' : 'lg:hidden'}`}>
   <span className='relative top-[3px] mr-1'>
-    <img src="/moverank-logo.svg" alt="MoveRank" className="h-6 inline-block" />
+    <img src="/move-rank.png" alt="MoveRank" className="h-6 inline-block" />
   </span>
   MoveRank
 </h3>
