@@ -37,7 +37,6 @@ const TopBar = ({ showSettings, showAddModal }:TopbarProps) => {
   <span className='relative top-[3px] mr-1'>
     <img src="/move-rank.png" alt="MoveRank" className="h-6 inline-block" />
   </span>
-  MoveRank
 </h3>
          {!isDomainsPage && router.asPath !== '/research' && (
             <Link href={'/domains'} passHref={true}>
