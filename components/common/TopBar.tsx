@@ -33,10 +33,12 @@ const TopBar = ({ showSettings, showAddModal }:TopbarProps) => {
        <div className={`topbar flex w-full mx-auto justify-between 
        ${isDomainsPage ? 'max-w-5xl lg:justify-between' : 'max-w-7xl lg:justify-end'}  bg-white lg:bg-transparent`}>
 
-         <h3 className={`p-4 text-base font-bold text-blue-700 ${isDomainsPage ? 'lg:pl-0' : 'lg:hidden'}`}>
-            <span className=' relative top-[3px] mr-1'><Icon type="logo" size={24} color="#364AFF" /></span> SerpBear
-            <button className='px-3 py-1 font-bold text-blue-700  lg:hidden ml-3 text-lg' onClick={() => showAddModal()}>+</button>
-         </h3>
+        <h3 className={`p-4 text-base font-bold text-blue-700 ${isDomainsPage ? 'lg:pl-0' : 'lg:hidden'}`}>
+  <span className='relative top-[3px] mr-1'>
+    <img src="/moverank-logo.svg" alt="MoveRank" className="h-6 inline-block" />
+  </span>
+  MoveRank
+</h3>
          {!isDomainsPage && router.asPath !== '/research' && (
             <Link href={'/domains'} passHref={true}>
                <a className=' right-14 top-2 px-2 py-1 cursor-pointer bg-[#ecf2ff] hover:bg-indigo-100 transition-all
